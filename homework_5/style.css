@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.box-header {
+    width: 100%;
+    height: 90px;
+    background-color: aqua;
+    margin: 0;
+    position: absolute;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    font-style: oblique;
+    line-height: 65px;
+    color: black;
+    margin-left: 25px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.box-link {
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10%;
+    display: inline-block;
+    position: fixed;
+    width: 300px;
+    height: 350px;
+    margin-top: 190px;
+    margin-left: 75px;
+}
+
+.box-link a {
+    text-decoration: none;
+    color: black;
+    box-shadow: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    font-style: oblique;
+    margin: 10px;
+}
+
+.box-link a:hover {
+    box-shadow: 5px 5px 5px 5px #808080;
+}
+
+.box-vl {
+    border-right: 6px solid black;
+    position: fixed;
+    height: 450px;
+    left: 450px;
+    top: 150px;
+}
+
+.box-window-book {
+    overflow: auto;
+    width: 1200;
+    height: 700px;
+    margin: 190px 0 0 550px;
+    text-align: left;
+    padding-left: 0;
+}
+
+.box-window-book-letter {
+    width: 1200px;
+    height: 42px;
+    background-color: aqua;
+    position: -webkit-sticky;
+    position: relative;
+    top: 0;
+}
+
+.box-window-book-letter h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: oblique;
+    color: black;
+    padding-top: 5px;
+    vertical-align: auto;
+}
+
+.box-window-book-letter-surname {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: oblique;
+    color: black;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+.box-window-book-letter-surname p {
+    margin: 0;
+}
