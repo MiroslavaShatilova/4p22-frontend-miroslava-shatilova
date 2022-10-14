@@ -21,7 +21,7 @@ body {
     height: 90px;
     background-color: aqua;
     margin: 0;
-    position: absolute;
+    position: fixed;
 }
 
 h1 {
@@ -72,21 +72,19 @@ h1 {
 }
 
 .box-window-book {
-    overflow: auto;
     width: 1200;
-    height: 700px;
+    height: 100%;
     margin: 190px 0 0 550px;
     text-align: left;
-    padding-left: 0;
+    padding: 0;
 }
 
 .box-window-book-letter {
     width: 1200px;
-    height: 42px;
+    height: 50px;
     background-color: aqua;
-    position: -webkit-sticky;
-    position: relative;
-    top: 0;
+    position: sticky;
+    top: 90px;
 }
 
 .box-window-book-letter h2 {
@@ -97,6 +95,7 @@ h1 {
     color: black;
     padding-top: 5px;
     vertical-align: auto;
+    padding-left: 5px;
 }
 
 .box-window-book-letter-surname {
@@ -105,10 +104,10 @@ h1 {
     font-weight: 500;
     font-style: oblique;
     color: black;
+    margin-top: 20px;
     padding-top: 10px;
     margin-bottom: 10px;
-    
-
+    margin-left: 10px;
 }
 
 .box-window-book-letter-surname p {
