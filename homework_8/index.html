@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <form class="form">
+        <div class="form__title form-title">
+            <p>Калькулятор</p>
+        </div>
+        <div class="form__group form-group">
+            <div class="form-group__input form-group-input">
+                <label for="first-number">Введите первое число</label><br/>
+                <input id="first-number" type="text" name="first-number" placeholder="Введите число">
+            </div>
+            <div class="form-group__input form-group-input">
+                <label for="sign">Введите знак операции</label><br/>
+                <input id="sign" type="text" name="sign" placeholder="Введите знак">
+            </div>
+            <div class="form-group__input form-group-input">
+                <label for="second-number">Введите второе число</label><br/>
+                <input id="second-number" type="text" name="second-number" placeholder="Введите число">
+            </div>
+        </div>
+        <div class="form__button form-button">
+            <button id="calc">Вычислить</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
