@@ -1,8 +1,9 @@
 'use strict'
 
-function makeFubonacciFunction () {
+function makeFubonacciFunction() {
     let previous = 0;
     let next = 1;
+
     return function() {
         next = previous + next;
         let current = previous = next - previous;
