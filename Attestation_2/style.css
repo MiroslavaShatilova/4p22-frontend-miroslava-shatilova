@@ -1,0 +1,372 @@
+*box {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-block-left {
+    display: inline-flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.header-block-right {
+    display: inline-flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    margin-right: 43px;
+}
+
+.header-block-left-logo img {
+    width: 222px;
+    height: 50px;
+    margin-top: 18px;
+}
+
+.header-block-left-well {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #787878;
+    margin-top: 21px;
+    margin-left: 30px;
+}
+
+.header-block-right-registration {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #787878;
+    margin-top: 25px;
+}
+
+.header-block-right-registration a {
+    text-decoration: none;
+    color: #787878;
+}
+
+.header-block-right-input {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1A226B;
+    margin-left: 28px;
+    margin-top: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    margin: 82px auto;
+    width: 600px;
+    height: min-content;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.form-title {
+    position: relative;
+    margin-top: 26px;
+    margin-bottom: 36px;
+    height: min-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    color: #787878;
+}
+
+.form-mail {
+    position: relative;
+    height: min-content;
+    margin-top: -17px;
+    margin-bottom: 32px;
+}
+
+.form-mail label {
+    position: relative;
+    color: #787878;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+ 
+.form-mail input {
+    position: relative;
+    width: 509px;
+    height: 49px;
+    color: #787878;
+    text-indent: 15px;
+    border: 2px solid #787878;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.form-mail input::placeholder {
+    color: #CCCCCC;
+    margin-left: 15px;
+}
+
+.form-password {
+    position: relative;
+    height: min-content;
+    margin-top: -17px;
+    margin-bottom: 52px;
+}
+
+.form-password label {
+    position: relative;
+    color: #787878;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.form-password input {
+    position: relative;
+    width: 509px;
+    height: 49px;
+    color: #787878;
+    text-indent: 15px;
+    border: 2px solid #787878;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.form-password input::placeholder {
+    color: #CCCCCC;
+}
+
+.form-button button {
+    position: relative;
+    width: 180px;
+    height: 52px;
+    margin-bottom: 37px;
+    background-color: #1A226B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        height: calc(80/768*100vw);
+    }
+
+    .header-block-left {
+        margin-left: calc(20/768*100vw);
+    }
+
+    .header-block-left-well {
+        font-size: calc(24/768*100vw);
+        margin-left: calc(34/768*100vw);
+        margin-top: calc(25/768*100vw);
+    }
+
+    .header-block-left-logo img {
+        width: calc(124/768*100vw);
+        height: calc(25/768*100vw);
+        margin-top: calc(23/768*100vw);
+    }
+
+    .header-block-right {
+        margin-right: calc(28/768*100vw);
+    }
+
+    .header-block-right-registration {
+        font-size: calc(16/768*100vw);
+        margin-top: calc(30/768*100vw);
+    }
+
+    .header-block-right-input {
+        margin-left: calc(36/768*100vw);
+        font-size: calc(16/768*100vw);
+        margin-top: calc(30/768*100vw);
+    }
+
+    .form {
+        width: calc(600/768*100vw);
+        margin: calc(75/768*100vw) auto;
+    }
+
+    .form-title {
+        margin-top: calc(26/768*100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(50/768*100vw);
+        line-height: 50px;
+        margin-bottom: calc(36/768*100vw);
+    }
+
+    .form-mail {
+        margin-top: calc(-24/768*100vw);
+        margin-bottom: calc(32/768*100vw);
+    }
+    .form-mail label {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(16/768*100vw);
+        line-height: 16px;
+    }
+    .form-mail input {
+        width: calc(509/768*100vw);
+        height: calc(49/768*100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28/768*100vw);
+        line-height: 36px;
+    }
+
+    .form-password {
+        margin-top: calc(-24/768*100vw);
+        margin-bottom: calc(52/768*100vw);
+    }
+
+    .form-password label {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(16/768*100vw);
+        line-height: 16px;
+    }
+
+    .form-password input {
+        width: calc(509/768*100vw);
+        height: calc(49/768*100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28/768*100vw);
+        line-height: 36px;
+    }
+
+    .form-button button {
+        position: relative;
+        width: calc(180/768*100vw);
+        height: calc(52/768*100vw);
+        margin-bottom: calc(37/768*100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(24/768*100vw);
+        line-height: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-block-left-logo{
+        width: calc(222/1440*100vw);
+    }
+
+    .form {
+        width: calc(600/1440*100vw);
+        margin: calc(82/1440*100vw) auto;
+    }
+
+    .form-title {
+        margin-top: 38px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 50px;
+        margin-bottom: 37px;
+    }
+
+    .form-mail {
+        margin-top: -24px;
+        margin-bottom: 37px;
+    }
+    .form-mail label {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 16px;
+    }
+    .form-mail input {
+        width: calc(509/1440*100vw);
+        height: 49px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .form-password {
+        margin-top: -24px;
+        margin-bottom: 19px;
+    }
+
+    .form-password label {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 16px;
+    }
+
+    .form-password input {
+        width: calc(509/1440*100vw);
+        height: 49px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+
+    .form-button button {
+        position: relative;
+        width: calc(180/1440*100vw);
+        height: 80px;
+        margin-bottom: calc(26/1440*100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 16px;
+    }
+}

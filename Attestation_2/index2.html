@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__block-left header-block-left">
+            <div class="header-block-left__logo header-block-left-logo">
+                <a href="" title="Главная" target="_blank">
+                <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-block-left__well header-block-left-well">PCS Frontend</div>
+        </div>
+        <div class="header__block-right header-block-right">
+            <div class="header-block-right__registration header-block-right-registration">Регистрация</div>
+            <div class="header-block-right__input header-block-right-input">
+                <a href="index.html" title="Главная">Вход</a>
+            </div>
+        </div>
+    </header>
+    <form class="form">
+        <div class="form__title form-title">Регистрация</div>
+        <div class="form__mail form-mail">
+            <label for="email"><span class="text">* Email</span><span id="error-email" class="error"></span></label>
+            <input id="email" name="email" type="email" action="" placeholder="Введите email">
+        </div>
+        <div class="form__password form-password">
+            <label for="password"><span class="text">* Пароль</span><span id="error-password" class="error"></span></label>
+            <input id="password" name="password" type="password" action="" placeholder="Введите пароль">
+        </div>
+        <div class="form__password2 form-password2">
+            <label for="password"><span class="text">* Подтверждение пароля</span><span id="error-repeat-password" class="error"></span></label>
+            <input id="repeat-password" name="password" type="password" action="" placeholder="Подтвердите пароль">
+        </div>
+        <div class="form__gender form-gender">
+            <p>Пол</p>
+            <div class="form-gender__box form-gender-box">
+                <input id="man" type="radio" name="gender" value="Man">
+                <label for="man">Мужчина</label>
+            </div>
+            <div class="form-gender__box form-gender-box">
+                <input id="woman" type="radio" name="gender" value="Woman">
+                <label for="woman">Женщина</label>
+            </div>
+        </div>
+        <div class="form__information form-information">
+            <label for="information">О себе</label></br>
+            <textarea id="information" type="text" name="information" placeholder="Расскажите о себе..."></textarea>
+        </div>
+        <div class="form__checked form-checked">
+            <input id="check" name="check" type="checkbox">
+            <label for="check">Я согласен получать обновления на почту</label>
+        </div>
+        <div class="form__button form-button">
+            <button id="click">Регистрация</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
